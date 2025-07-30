@@ -7,7 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    testing
+     <div class="container">
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Status</th>
+                <th>Change</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+
+
+        <button id="addButton">New Book</button>
+
+        <div id="pop-up-container">
+            <div>
+                <h2>Add a Book!</h2>
+            </div>
+            <form id="book-form">
+                <div class="form-container">
+                    <label for="">Title</label>
+                    <input id="title" type="text" required>
+
+                    <label for="">Author</label>
+                    <input id="author" type="text" required>
+
+                    <label for="">Pages</label>
+                    <input id="pages" type="text" required>
+
+                    <label for="">Read</label>
+                    <input id="read" type="checkbox">
+                </div>
+
+                <div class="buttons-container">
+                    <button type="submit">Save</button>
+                    <button id="closeBtn">Cancel</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
